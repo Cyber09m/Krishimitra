@@ -1,0 +1,55 @@
+# Brings up the full stack: MongoDB, Flask API, React frontend.
+#
+# Two ways to run this:
+#   1. Demo/local mode (default): uses the bundled `mongo` service below —
+#      no Atlas account needed. Just `docker compose up --build`.
+#   2. Atlas mode: set MONGO_URI in backend/.env to your Atlas connection
+#      string, then comment out the `mongo` service and remove `depends_on`
+#      below — the backend will connect to Atlas instead of the local one.
+#
+# Either way, GEMINI_API_KEY must be a real value in backend/.env for
+# disease detection AND the chatbot to work — Docker doesn't create it for
+# you.
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: krishimitra-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+    container_name: krishimitra-backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      # Overrides backend/.env's MONGO_URI so local demo mode "just works"
+      # against the bundled mongo service above. Delete this line if you're
+      # pointing at Atlas instead (see note at the top of this file).
+      - MONGO_URI=mongodb://mongo:27017
+      - MONGO_DB_NAME=krishimitra
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:5000/api
+    container_name: krishimitra-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:

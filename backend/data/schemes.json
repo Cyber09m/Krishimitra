@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pmkisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "description": "Income support of ₹6,000/year paid directly to eligible farmer families in three installments.",
+    "eligible_states": "all",
+    "eligible_crops": "all",
+    "max_land_acres": null,
+    "eligible_categories": ["small", "marginal"],
+    "link": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "pmfby",
+    "name": "PM Fasal Bima Yojana (Crop Insurance)",
+    "description": "Subsidized crop insurance covering yield losses from natural calamities, pests, and diseases.",
+    "eligible_states": "all",
+    "eligible_crops": "all",
+    "max_land_acres": null,
+    "eligible_categories": ["small", "marginal", "large"],
+    "link": "https://pmfby.gov.in"
+  },
+  {
+    "id": "kcc",
+    "name": "Kisan Credit Card (KCC)",
+    "description": "Low-interest short-term credit for crop production, post-harvest expenses, and farm asset maintenance.",
+    "eligible_states": "all",
+    "eligible_crops": "all",
+    "max_land_acres": null,
+    "eligible_categories": ["small", "marginal", "large"],
+    "link": "https://www.myscheme.gov.in/schemes/kcc"
+  },
+  {
+    "id": "soil_health_card",
+    "name": "Soil Health Card Scheme",
+    "description": "Free soil testing and nutrient recommendations to improve fertilizer efficiency and crop yield.",
+    "eligible_states": "all",
+    "eligible_crops": "all",
+    "max_land_acres": null,
+    "eligible_categories": ["small", "marginal", "large"],
+    "link": "https://soilhealth.dac.gov.in"
+  },
+  {
+    "id": "pmksy",
+    "name": "PM Krishi Sinchayee Yojana (Irrigation)",
+    "description": "Subsidies for micro-irrigation (drip/sprinkler) equipment to improve water-use efficiency.",
+    "eligible_states": "all",
+    "eligible_crops": "all",
+    "max_land_acres": 10,
+    "eligible_categories": ["small", "marginal"],
+    "link": "https://pmksy.gov.in"
+  },
+  {
+    "id": "up_ganna_kisan",
+    "name": "UP Ganna Kisan Yojana (Sugarcane)",
+    "description": "State-specific support and price assurance for sugarcane growers in Uttar Pradesh.",
+    "eligible_states": ["Uttar Pradesh"],
+    "eligible_crops": ["sugarcane"],
+    "max_land_acres": null,
+    "eligible_categories": ["small", "marginal", "large"],
+    "link": "https://enau.in.gov.in"
+  }
+]

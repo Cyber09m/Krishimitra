@@ -1,0 +1,38 @@
+{
+  "Tomato___Late_blight": {
+    "label": "Tomato — Late Blight",
+    "severity": "high",
+    "description": "A fast-spreading fungal disease that causes dark, water-soaked lesions on leaves and stems, often fatal to the plant within days in humid weather.",
+    "treatment": "Remove and destroy infected leaves immediately. Apply a copper-based or chlorothalonil fungicide every 7-10 days. Avoid overhead watering and improve airflow between plants."
+  },
+  "Tomato___Early_blight": {
+    "label": "Tomato — Early Blight",
+    "severity": "medium",
+    "description": "Fungal disease causing concentric-ring brown spots on older leaves, usually starting from the bottom of the plant.",
+    "treatment": "Prune lower infected leaves, apply mancozeb or copper fungicide, and rotate crops next season to break the fungal cycle in the soil."
+  },
+  "Potato___Late_blight": {
+    "label": "Potato — Late Blight",
+    "severity": "high",
+    "description": "The same pathogen responsible for the historic Irish potato famine — spreads rapidly in cool, wet conditions.",
+    "treatment": "Apply fungicide (metalaxyl or copper oxychloride) at first sign of infection. Destroy infected tubers and avoid planting in the same field for at least 2 seasons."
+  },
+  "Corn___Common_rust": {
+    "label": "Corn (Maize) — Common Rust",
+    "severity": "medium",
+    "description": "Reddish-brown pustules appear on both leaf surfaces, reducing photosynthesis and yield if left unchecked.",
+    "treatment": "Apply a triazole or strobilurin fungicide if infection appears before tasseling. Choose rust-resistant hybrid seed varieties for future sowing."
+  },
+  "Wheat___Yellow_rust": {
+    "label": "Wheat — Yellow (Stripe) Rust",
+    "severity": "high",
+    "description": "Yellow-orange stripes of spores form along leaf veins; spreads fast in cool, humid climates and can cause major yield loss.",
+    "treatment": "Spray propiconazole or tebuconazole-based fungicide at first symptom. Monitor weekly during cool, moist weather and consider resistant varieties next season."
+  },
+  "Healthy": {
+    "label": "Healthy Leaf",
+    "severity": "none",
+    "description": "No visible signs of disease detected on the scanned leaf.",
+    "treatment": "No treatment needed. Continue regular monitoring, balanced fertilization, and adequate irrigation."
+  }
+}
